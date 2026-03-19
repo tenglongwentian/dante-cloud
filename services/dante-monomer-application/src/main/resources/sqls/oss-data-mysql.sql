@@ -289,10 +289,6 @@ INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('4dcb04f5-bb64-
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('3b83534e-016f-4e22-9553-5d8b96f29146', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('312d287f-ee2e-486f-b2e6-88328edb2c75', '7e43d37d-d045-445f-a1de-cb1259f7709c');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('312d287f-ee2e-486f-b2e6-88328edb2c75', '1');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c21db958-7eab-4dbc-8061-966294684219', '1');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c21db958-7eab-4dbc-8061-966294684219', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9f064902-162a-408f-bd3e-866b03c9dae1', '1');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9f064902-162a-408f-bd3e-866b03c9dae1', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('0f9aa3b0-c164-4a61-ae31-5fd73274ce53', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('0f9aa3b0-c164-4a61-ae31-5fd73274ce53', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('2ca9ed44-ed47-4346-a310-d32375d0d5bf', '7e43d37d-d045-445f-a1de-cb1259f7709c');
@@ -316,6 +312,13 @@ INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('5b4ab829-1087-
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('be8c12e4-4de5-406e-bc9d-5a7dac2c0a10', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('269d5202-faea-401a-80be-c10fb71b1c44', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('055ceade-50ee-4f26-a816-f99ca408960b', '1');
+INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c21db958-7eab-4dbc-8061-966294684219', '7e43d37d-d045-445f-a1de-cb1259f7709c');
+INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c21db958-7eab-4dbc-8061-966294684219', '1');
+INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c21db958-7eab-4dbc-8061-966294684219', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
+INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9f064902-162a-408f-bd3e-866b03c9dae1', '7e43d37d-d045-445f-a1de-cb1259f7709c');
+INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9f064902-162a-408f-bd3e-866b03c9dae1', '1');
+INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9f064902-162a-408f-bd3e-866b03c9dae1', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
+
 
 /*
  * Copyright 2020-2030 码匠君<herodotus@aliyun.com>
