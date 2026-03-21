@@ -28,7 +28,7 @@
     <parent>
         <groupId>cn.herodotus.ecosystem</groupId>
         <artifactId>herodotus-ecosystem-parent</artifactId>
-        <version>4.0.4.0</version>
+        <version>4.0.4.1</version>
         <relativePath/>
     </parent>
 
@@ -56,7 +56,7 @@
         <dependencies>
             <dependency>
                 <groupId>org.dromara.dante</groupId>
-                <artifactId>dante-engine-dependencies</artifactId>
+                <artifactId>dante-dependencies</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -272,13 +272,13 @@
                         <artifactId>central-publishing-maven-plugin</artifactId>
                         <configuration>
                             <excludeArtifacts>
-                                <excludeArtifact>platform</excludeArtifact>
+                                <excludeArtifact>dante-cloud-platform</excludeArtifact>
                                 <excludeArtifact>dante-cloud-gateway</excludeArtifact>
                                 <excludeArtifact>dante-cloud-message</excludeArtifact>
                                 <excludeArtifact>dante-cloud-monitor</excludeArtifact>
                                 <excludeArtifact>dante-cloud-uaa</excludeArtifact>
                                 <excludeArtifact>dante-cloud-upms</excludeArtifact>
-                                <excludeArtifact>services</excludeArtifact>
+                                <excludeArtifact>dante-cloud-services</excludeArtifact>
                                 <excludeArtifact>dante-cloud-bpmn-ability</excludeArtifact>
                                 <excludeArtifact>dante-cloud-bpmn-logic</excludeArtifact>
                                 <excludeArtifact>dante-cloud-oss-ability</excludeArtifact>
@@ -377,10 +377,10 @@
     </build>
 
     <modules>
-        <module>dependencies</module>
-        <module>modules</module>
-        <module>packages</module>
-        <module>platform</module>
-        <module>services</module>
+        <module>dante-cloud-dependencies</module>
+        <module>dante-cloud-modules</module>
+        <module>dante-cloud-packages</module>
+        <module>dante-cloud-platform</module>
+        <module>dante-cloud-services</module>
     </modules>
 </project>
