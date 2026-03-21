@@ -14,7 +14,7 @@ springdoc:
     disable-swagger-default-url: true
     urls-primary-name: OperatonRestAPI
     urls:
-      - url: /operaton-rest-api.json
+      - url: /openapi.json
         name: OperatonRestAPI
 
 operaton:
