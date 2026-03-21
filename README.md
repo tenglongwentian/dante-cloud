@@ -134,7 +134,7 @@ dante-cloud
 ├── configurations -- 配置文件脚本和统一Docker build上下文目录
 ├── dependencies -- 工程 Bom 定义，统一控制工程模块
 ├── module -- “半成品”组件模块分组(可以再此建立业务代码模块，以模块的形式实现代码的共享以及架构的切换)
-├    ├── dante-module-common -- 微服务版公共辅助代码模块
+├    ├── dante-cloud-commons -- 微服务版公共辅助代码模块
 ├    └── dante-monomer-autoconfigure -- 单体版自动配置模块
 ├── packages -- 基础核心Starter
 ├    ├── authentication-spring-boot-starter -- OAuth2 授权服务器自动配置 Starter(主要用于微服务版和单体版统一认证)
