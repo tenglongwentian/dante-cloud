@@ -34,19 +34,19 @@
 
 ---
 
-### 重要声明
+## 重要声明
 
 自 **v4.0.5.0** 版本起，Dante Cloud 核心库 Dante Engine 子项目全面开放。
 
-### 项目地址
+## 项目地址
 
-#### (2)核心组件库
+### 1. 核心组件库
 
 - **Gitee**：[https://gitee.com/dante-compass/dante-engine](https://gitee.com/dante-compass/dante-engine)
 - **Github**：[https://github.com/dante-compass/dante-engine](https://github.com/dante-compass/dante-engine)
 - **AtomGit**：[https://atomgit.com/dante-compass/dante-engine](https://atomgit.com/dante-compass/dante-engine)
 
-#### (2)前端工程
+### 2. 前端工程
 
 - **Gitee**：[https://gitee.com/dante-compass/dante-cloud-ui](https://gitee.com/dante-compass/dante-cloud-ui)
 - **Github**：[https://github.com/dante-compass/dante-cloud-ui](https://github.com/dante-compass/dante-cloud-ui)
