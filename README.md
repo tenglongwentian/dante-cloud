@@ -34,38 +34,6 @@
 
 ---
 
-## 重要声明
-
-1. 自 **v4.0.5.0** 版本起，Dante Cloud 核心库 Dante Engine 子项目全面开放。
-2. 自 **v4.0.5.1** 版本起，为了提升维护效率，Dante Cloud 企业版和开源版前端合并，新版本前端（Vuetify 版）源代码也全面开放。
-
-> 注意：新版前端（Vuetify 版）与旧版前端（Quasar 版）共享模块，开发时需要以（Vuetify 版）为主，详情参见：[前端【共享模块】](https://www.herodotus.vip/get-started/install/frontend.html#_5-%E5%85%B1%E4%BA%AB%E6%A8%A1%E5%9D%97)
-
-## 项目地址
-
-### 1. Dante Cloud 主工程
-
-- **Gitee**：[https://gitee.com/dromara/dante-cloud](https://gitee.com/dromara/dante-cloud)
-- **Github**：[https://github.com/dromara/dante-cloud](https://github.com/dromara/dante-cloud)
-- **AtomGit**：[https://atomgit.com/dromara/dante-cloud](https://atomgit.com/dromara/dante-cloud)
-
-### 2. Dante Engine 核心组件库
-
-- **Gitee**：[https://gitee.com/dante-compass/dante-engine](https://gitee.com/dante-compass/dante-engine)
-- **Github**：[https://github.com/dante-compass/dante-engine](https://github.com/dante-compass/dante-engine)
-- **AtomGit**：[https://atomgit.com/dante-compass/dante-engine](https://atomgit.com/dante-compass/dante-engine)
-
-### 3. UI 前端工程（旧版）
-
-- **Gitee**：[https://gitee.com/dante-compass/dante-cloud-ui](https://gitee.com/dante-compass/dante-cloud-ui)
-- **Github**：[https://github.com/dante-compass/dante-cloud-ui](https://github.com/dante-compass/dante-cloud-ui)
-- **AtomGit**：[https://atomgit.com/dante-compass/dante-cloud-ui](https://atomgit.com/dante-compass/dante-cloud-ui)
-
-### 4. UI 前端工程（新版）
-
-- **Gitee**：[https://gitee.com/dante-compass/herodotus-cloud-ui-vuetify](https://gitee.com/dante-compass/dante-cloud-ui)
-- **Github**：[https://github.com/dante-compass/herodotus-cloud-ui-vuetify](https://github.com/dante-compass/dante-cloud-ui)
-
 ## 企业级技术中台与云原生微服务基座
 
 **Dante Cloud** 国内首个支持阻塞式和响应式服务并行的、开箱即用的企业级云原生微服务基座。是采用**领域驱动模型(DDD)**设计思想，以「**高质量代码、低安全漏洞**」为核心，基于 Spring 生态全域开源技术，高度**模块化和组件化设计**，支持**智能电视、IoT等物联网设备**认证，满足**国家三级等保要求**，支持**接口国密数字信封加解密**等一系列安全体系的一站式多租户微服务解决方案。独创的可以“**一套代码实现微服务和单体两种架构灵活切换**”的企业级应用系统。
@@ -108,9 +76,41 @@
 - **「极简编程用户」**：如果您希望基于自己现有知识，不看文档不用学习就可以快速搭建应用，或者通过拖拽生成代码简化开发，这与本项目的产品定位、开发理念、设计哲学背道而驰。
 - **「审美品鉴用户」**：本项目前端是使用组件库纯手搓构建，没有专业的美工也没有照搬主流框架，初衷是为后端开发人员接触前端提供一条更友好的途径，所以不能保证符合您的审美。
 
+## 重要声明
+
+1. 自 **v4.0.5.0** 版本起，Dante Cloud 核心库 Dante Engine 子项目全面开放。
+2. 自 **v4.0.5.1** 版本起，为了提升维护效率，Dante Cloud 企业版和开源版前端合并，新版本前端（Vuetify 版）源代码也全面开放。
+
+> 注意：新版前端（Vuetify 版）与旧版前端（Quasar 版）共享模块，开发时需要以（Vuetify 版）为主，详情参见：[前端【共享模块】](https://www.herodotus.vip/get-started/install/frontend.html#_5-%E5%85%B1%E4%BA%AB%E6%A8%A1%E5%9D%97)
+
+## 项目地址
+
+### 1. Dante Cloud 主工程
+
+- **Gitee**：[https://gitee.com/dromara/dante-cloud](https://gitee.com/dromara/dante-cloud)
+- **Github**：[https://github.com/dromara/dante-cloud](https://github.com/dromara/dante-cloud)
+- **AtomGit**：[https://atomgit.com/dromara/dante-cloud](https://atomgit.com/dromara/dante-cloud)
+
+### 2. Dante Engine 核心组件库
+
+- **Gitee**：[https://gitee.com/dante-compass/dante-engine](https://gitee.com/dante-compass/dante-engine)
+- **Github**：[https://github.com/dante-compass/dante-engine](https://github.com/dante-compass/dante-engine)
+- **AtomGit**：[https://atomgit.com/dante-compass/dante-engine](https://atomgit.com/dante-compass/dante-engine)
+
+### 3. UI 前端工程（旧版）
+
+- **Gitee**：[https://gitee.com/dante-compass/dante-cloud-ui](https://gitee.com/dante-compass/dante-cloud-ui)
+- **Github**：[https://github.com/dante-compass/dante-cloud-ui](https://github.com/dante-compass/dante-cloud-ui)
+- **AtomGit**：[https://atomgit.com/dante-compass/dante-cloud-ui](https://atomgit.com/dante-compass/dante-cloud-ui)
+
+### 4. UI 前端工程（新版）
+
+- **Gitee**：[https://gitee.com/dante-compass/herodotus-cloud-ui-vuetify](https://gitee.com/dante-compass/dante-cloud-ui)
+- **Github**：[https://github.com/dante-compass/herodotus-cloud-ui-vuetify](https://github.com/dante-compass/dante-cloud-ui)
+
 ## [1]、开源协议
 
-### 1. 变更声明
+### 1. 协议声明
 
 Dante Cloud 以及 Dante Engine 子项目开源协议 **【永久】** 变更为 Apache License Version 2.0。可用于个人学习、毕设，允许商业使用，禁止二次开源。严禁搬运至 CSDN 下载等平台进行售卖。
 
