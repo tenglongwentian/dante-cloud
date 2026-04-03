@@ -23,22 +23,25 @@
  * 6. 若您的项目无法满足以上几点，可申请商业授权
  */
 
-package org.dromara.dante.monomer.appliation;
+package org.dromara.dante.monolith.autoconfigure.processor;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.stream.function.FunctionConfiguration;
+import org.springframework.cloud.bus.BusBridge;
+import org.springframework.cloud.bus.event.RemoteApplicationEvent;
+import org.springframework.stereotype.Component;
 
 /**
- * <p>Description: Dante Cloud 单体版本应用 </p>
+ * <p>Description: AthenaBusBridge </p>
+ * <p>
+ * 解决单体版对 Spring Cloud Stream 的依赖，导致必须连接访问 Kafka 问题。
  *
  * @author : gengwei.zheng
- * @date : 2024/10/3 17:44
+ * @date : 2022/4/8 22:51
  */
-@SpringBootApplication(exclude = {FunctionConfiguration.class})
-public class AthenaApplication {
+@Component
+public class MonolithBusBridge implements BusBridge {
 
-    public static void main(String[] args) {
-        SpringApplication.run(AthenaApplication.class, args);
+    @Override
+    public void send(RemoteApplicationEvent event) {
+
     }
 }

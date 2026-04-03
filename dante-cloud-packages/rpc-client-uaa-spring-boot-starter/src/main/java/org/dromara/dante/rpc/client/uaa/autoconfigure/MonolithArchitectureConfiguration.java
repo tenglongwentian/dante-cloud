@@ -46,15 +46,15 @@ import org.springframework.context.annotation.Configuration;
  * @date : 2022/2/1 21:27
  */
 @Configuration(proxyBeanMethods = false)
-@ConditionalOnArchitecture(Architecture.MONOCOQUE)
+@ConditionalOnArchitecture(Architecture.MONOLITH)
 @EnableHerodotusLogicUpms
-public class MonocoqueArchitectureConfiguration {
+public class MonolithArchitectureConfiguration {
 
-    private static final Logger log = LoggerFactory.getLogger(MonocoqueArchitectureConfiguration.class);
+    private static final Logger log = LoggerFactory.getLogger(MonolithArchitectureConfiguration.class);
 
     @PostConstruct
     public void postConstruct() {
-        log.debug("[Herodotus] |- Auto [Module Monocoque Architecture] Configure.");
+        log.debug("[Herodotus] |- Auto [Monolith Architecture] Configure.");
     }
 
     @Bean

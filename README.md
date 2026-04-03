@@ -163,7 +163,7 @@ dante-cloud
 ├── dante-cloud-dependencies -- 工程 Bom 定义，统一控制工程模块
 ├── dante-cloud-module -- “半成品”组件模块分组(可以再此建立业务代码模块，以模块的形式实现代码的共享以及架构的切换)
 ├    ├── dante-cloud-commons -- 微服务版公共辅助代码模块
-├    └── dante-monomer-autoconfigure -- 单体版自动配置模块
+├    └── dante-monolith-autoconfigure -- 单体版自动配置模块
 ├── dante-cloud-packages -- 基础核心Starter
 ├    ├── authentication-spring-boot-starter -- OAuth2 授权服务器自动配置 Starter(主要用于微服务版和单体版统一认证)
 ├    ├── authorization-servlet-spring-boot-starter -- 阻塞式 OAuth2 资源服务器自动配置 Starter(除了 Monitor 等特殊服务以外，所有服务均需依赖)
@@ -180,7 +180,7 @@ dante-cloud
 ├    ├── dante-cloud-bpmn-ability -- 工作流服务
 ├    ├── dante-cloud-bpmn-logic -- 工作流基础代码模块
 ├    ├── dante-cloud-oss-ability -- 对象存储服务
-└──  └── dante-monomer-application -- Dante Cloud 单体版应用模块
+└──  └── dante-monolith-application -- Dante Cloud 单体版应用模块
 ```
 
 ## [6]、 版本和分支

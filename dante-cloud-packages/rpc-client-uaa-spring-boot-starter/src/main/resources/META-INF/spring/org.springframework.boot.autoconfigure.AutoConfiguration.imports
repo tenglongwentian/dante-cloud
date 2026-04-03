@@ -24,4 +24,4 @@
 #
 
 org.dromara.dante.rpc.client.uaa.autoconfigure.DistributedArchitectureConfiguration
-org.dromara.dante.rpc.client.uaa.autoconfigure.MonocoqueArchitectureConfiguration
+org.dromara.dante.rpc.client.uaa.autoconfigure.MonolithArchitectureConfiguration

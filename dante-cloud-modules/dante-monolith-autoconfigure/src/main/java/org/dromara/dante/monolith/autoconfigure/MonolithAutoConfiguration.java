@@ -23,11 +23,11 @@
  * 6. 若您的项目无法满足以上几点，可申请商业授权
  */
 
-package org.dromara.dante.monomer.autoconfigure;
+package org.dromara.dante.monolith.autoconfigure;
 
 import jakarta.annotation.PostConstruct;
-import org.dromara.dante.monomer.autoconfigure.processor.MonomerBusBridge;
-import org.dromara.dante.monomer.autoconfigure.processor.MonomerCorsFilter;
+import org.dromara.dante.monolith.autoconfigure.processor.MonolithBusBridge;
+import org.dromara.dante.monolith.autoconfigure.processor.MonolithCorsFilter;
 import org.dromara.dante.rest.upms.annotation.EnableHerodotusRestUpms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,22 +43,22 @@ import org.springframework.context.annotation.Bean;
  */
 @AutoConfiguration
 @EnableHerodotusRestUpms
-public class MonomerAutoConfiguration {
+public class MonolithAutoConfiguration {
 
-    private static final Logger log = LoggerFactory.getLogger(MonomerAutoConfiguration.class);
+    private static final Logger log = LoggerFactory.getLogger(MonolithAutoConfiguration.class);
 
     @PostConstruct
     public void postConstruct() {
-        log.debug("[Herodotus] |- Auto [Monomer] Configure.");
+        log.debug("[Herodotus] |- Auto [Monolith] Configure.");
     }
 
     @Bean
     public BusBridge busBridge() {
-        return new MonomerBusBridge();
+        return new MonolithBusBridge();
     }
 
     @Bean
-    public MonomerCorsFilter monomerCorsFilter() {
-        return new MonomerCorsFilter();
+    public MonolithCorsFilter monolithCorsFilter() {
+        return new MonolithCorsFilter();
     }
 }

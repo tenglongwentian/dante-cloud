@@ -23,7 +23,7 @@
  * 6. 若您的项目无法满足以上几点，可申请商业授权
  */
 
-package org.dromara.dante.monomer.autoconfigure.processor;
+package org.dromara.dante.monolith.autoconfigure.processor;
 
 import com.google.common.net.HttpHeaders;
 import jakarta.servlet.*;
@@ -49,7 +49,7 @@ import java.io.IOException;
  */
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
-public class MonomerCorsFilter implements Filter {
+public class MonolithCorsFilter implements Filter {
 
     private static final String[] ACCESS_CONTROL_ALLOW_METHODS = new String[]{HttpMethod.GET.name(), HttpMethod.POST.name(), HttpMethod.PUT.name(), HttpMethod.DELETE.name(), HttpMethod.OPTIONS.name()};
 

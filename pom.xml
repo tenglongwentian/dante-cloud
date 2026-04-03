@@ -227,7 +227,7 @@
                                 <excludeArtifact>dante-cloud-bpmn-ability</excludeArtifact>
                                 <excludeArtifact>dante-cloud-bpmn-logic</excludeArtifact>
                                 <excludeArtifact>dante-cloud-oss-ability</excludeArtifact>
-                                <excludeArtifact>dante-monomer-application</excludeArtifact>
+                                <excludeArtifact>dante-monolith-application</excludeArtifact>
                             </excludeArtifacts>
                         </configuration>
                     </plugin>
@@ -282,7 +282,7 @@
                                 <excludeArtifact>dante-cloud-bpmn-ability</excludeArtifact>
                                 <excludeArtifact>dante-cloud-bpmn-logic</excludeArtifact>
                                 <excludeArtifact>dante-cloud-oss-ability</excludeArtifact>
-                                <excludeArtifact>dante-monomer-application</excludeArtifact>
+                                <excludeArtifact>dante-monolith-application</excludeArtifact>
                             </excludeArtifacts>
                         </configuration>
                     </plugin>

@@ -68,7 +68,7 @@
 
     <modules>
         <module>dante-cloud-commons</module>
-        <module>dante-monomer-autoconfigure</module>
+        <module>dante-monolith-autoconfigure</module>
     </modules>
 
 </project>
