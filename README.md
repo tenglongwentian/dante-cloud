@@ -12,8 +12,8 @@
     <a href="https://nacos.io/zh-cn/index.html" target="_blank"><img src="https://img.shields.io/badge/Nacos-3.2.0-brightgreen.svg?logo=alibabadotcom" alt="Nacos 3.2.0"></a>
 </p>
 <p align="center">
-    <a href="#" target="_blank"><img src="https://img.shields.io/badge/Version-4.0.5.1-red.svg?logo=spring" alt="Version 4.0.5.1"></a>
-    <a href="https://gitee.com/dromara/dante-cloud/issues/IDKCZD" target="_blank"><img src="https://img.shields.io/badge/Dante%20Engine-4.0.5.1-red.svg?logo=spring" alt="Dante Engine 4.0.5.1"></a>
+    <a href="#" target="_blank"><img src="https://img.shields.io/badge/Version-4.0.5.2-red.svg?logo=spring" alt="Version 4.0.5.2"></a>
+    <a href="https://gitee.com/dromara/dante-cloud/issues/IDKCZD" target="_blank"><img src="https://img.shields.io/badge/Dante%20Engine-4.0.5.2-red.svg?logo=spring" alt="Dante Engine 4.0.5.2"></a>
     <a href="https://bell-sw.com/pages/downloads/#downloads" target="_blank"><img src="https://img.shields.io/badge/JDK-25%2B-green.svg?logo=openjdk" alt="Java 25"></a>
     <a href="./LICENSE"><img src="https://shields.io/badge/License-Apache--2.0-blue.svg?logo=apache" alt="License Apache 2.0"></a>
     <a href="https://blog.csdn.net/Pointer_v" target="_blank"><img src="https://img.shields.io/badge/Author-%E7%A0%81%E5%8C%A0%E5%90%9B-orange" alt="码匠君"></a>
@@ -163,7 +163,7 @@ dante-cloud
 ├── dante-cloud-dependencies -- 工程 Bom 定义，统一控制工程模块
 ├── dante-cloud-module -- “半成品”组件模块分组(可以再此建立业务代码模块，以模块的形式实现代码的共享以及架构的切换)
 ├    ├── dante-cloud-commons -- 微服务版公共辅助代码模块
-├    └── dante-monomer-autoconfigure -- 单体版自动配置模块
+├    └── dante-monolith-autoconfigure -- 单体版自动配置模块
 ├── dante-cloud-packages -- 基础核心Starter
 ├    ├── authentication-spring-boot-starter -- OAuth2 授权服务器自动配置 Starter(主要用于微服务版和单体版统一认证)
 ├    ├── authorization-servlet-spring-boot-starter -- 阻塞式 OAuth2 资源服务器自动配置 Starter(除了 Monitor 等特殊服务以外，所有服务均需依赖)
@@ -180,7 +180,7 @@ dante-cloud
 ├    ├── dante-cloud-bpmn-ability -- 工作流服务
 ├    ├── dante-cloud-bpmn-logic -- 工作流基础代码模块
 ├    ├── dante-cloud-oss-ability -- 对象存储服务
-└──  └── dante-monomer-application -- Dante Cloud 单体版应用模块
+└──  └── dante-monolith-application -- Dante Cloud 单体版应用模块
 ```
 
 ## [6]、 版本和分支

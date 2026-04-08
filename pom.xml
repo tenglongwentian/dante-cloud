@@ -28,7 +28,7 @@
     <parent>
         <groupId>cn.herodotus.ecosystem</groupId>
         <artifactId>herodotus-ecosystem-parent</artifactId>
-        <version>4.0.5.1</version>
+        <version>4.0.5.2</version>
         <relativePath/>
     </parent>
 
@@ -227,7 +227,7 @@
                                 <excludeArtifact>dante-cloud-bpmn-ability</excludeArtifact>
                                 <excludeArtifact>dante-cloud-bpmn-logic</excludeArtifact>
                                 <excludeArtifact>dante-cloud-oss-ability</excludeArtifact>
-                                <excludeArtifact>dante-monomer-application</excludeArtifact>
+                                <excludeArtifact>dante-monolith-application</excludeArtifact>
                             </excludeArtifacts>
                         </configuration>
                     </plugin>
@@ -282,7 +282,7 @@
                                 <excludeArtifact>dante-cloud-bpmn-ability</excludeArtifact>
                                 <excludeArtifact>dante-cloud-bpmn-logic</excludeArtifact>
                                 <excludeArtifact>dante-cloud-oss-ability</excludeArtifact>
-                                <excludeArtifact>dante-monomer-application</excludeArtifact>
+                                <excludeArtifact>dante-monolith-application</excludeArtifact>
                             </excludeArtifacts>
                         </configuration>
                     </plugin>

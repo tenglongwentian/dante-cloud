@@ -28,33 +28,31 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <artifactId>dante-cloud-packages</artifactId>
         <groupId>org.dromara.dante</groupId>
+        <artifactId>dante-cloud-services</artifactId>
         <version>4.0.5.2</version>
     </parent>
 
-    <artifactId>authorization-servlet-spring-boot-starter</artifactId>
+    <artifactId>dante-monolith-application</artifactId>
     <name>${project.artifactId}</name>
 
-    <description>Dante Cloud 阻塞式 OAuth2 资源服务器自动配置 Starter(除了 Monitor 等特殊服务以外，所有服务均需依赖)</description>
+    <description>Dante Cloud 单体版应用模块</description>
 
     <dependencies>
         <dependency>
             <groupId>org.dromara.dante</groupId>
-            <artifactId>dante-authorization-autoconfigure</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.dromara.dante</groupId>
-            <artifactId>facility-spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.dromara.dante</groupId>
-            <artifactId>webmvc-spring-boot-starter</artifactId>
+            <artifactId>dante-monolith-autoconfigure</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
