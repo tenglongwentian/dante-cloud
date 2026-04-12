@@ -608,7 +608,7 @@ spring:
             enabled: true
   data:
     redis:
-      database: 6
+      database: 5
       host: 192.168.101.10
       password:
       port: 16379
