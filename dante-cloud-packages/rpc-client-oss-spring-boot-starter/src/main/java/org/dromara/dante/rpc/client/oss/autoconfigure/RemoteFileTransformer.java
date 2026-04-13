@@ -23,19 +23,22 @@
  * 6. 若您的项目无法满足以上几点，可申请商业授权
  */
 
-package org.dromara.dante.commons;
+package org.dromara.dante.rpc.client.oss.autoconfigure;
+
+import org.dromara.dante.core.support.file.AbstractOssPresignedUrlTransformer;
+import org.dromara.dante.core.support.file.OssPresignedUrlGenerator;
+import org.springframework.stereotype.Component;
 
 /**
- * <p>Description: 服务明常量 </p>
+ * <p>Description: 服务间文件处理器 </p>
  *
  * @author : gengwei.zheng
- * @date : 2022/2/3 17:35
+ * @date : 2024/10/22 22:35
  */
-public interface ServiceNameConstants {
+@Component
+public class RemoteFileTransformer extends AbstractOssPresignedUrlTransformer {
 
-    String SERVICE_NAME_UAA = "dante-cloud-uaa";
-
-    String SERVICE_NAME_UPMS = "dante-cloud-upms";
-
-    String SERVICE_NAME_OSS = "dante-cloud-oss-ability";
+    public RemoteFileTransformer(OssPresignedUrlGenerator ossPresignedUrlGenerator) {
+        super(ossPresignedUrlGenerator);
+    }
 }

@@ -23,19 +23,32 @@
  * 6. 若您的项目无法满足以上几点，可申请商业授权
  */
 
-package org.dromara.dante.commons;
+package org.dromara.dante.rpc.client.oss.autoconfigure.feign.api;
+
+import org.dromara.dante.commons.ServiceNameConstants;
+import org.dromara.dante.core.domain.Result;
+import org.dromara.dante.web.definition.dto.OssPresigned;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /**
- * <p>Description: 服务明常量 </p>
+ * <p>Description: Openfeign 远程调用 Oss 预签名服务 </p>
  *
  * @author : gengwei.zheng
- * @date : 2022/2/3 17:35
+ * @date : 2024/10/22 22:08
  */
-public interface ServiceNameConstants {
+@FeignClient(contextId = "remoteOssPresignedUrlService", value = ServiceNameConstants.SERVICE_NAME_OSS)
+public interface RemoteOssPresignedUrlService {
 
-    String SERVICE_NAME_UAA = "dante-cloud-uaa";
+    @PostMapping("/oss/presigned/upload")
+    Result<String> upload(@Validated @RequestBody OssPresigned argument);
 
-    String SERVICE_NAME_UPMS = "dante-cloud-upms";
+    @PostMapping("/oss/presigned/download")
+    Result<String> download(@Validated @RequestBody OssPresigned argument);
 
-    String SERVICE_NAME_OSS = "dante-cloud-oss-ability";
+    @DeleteMapping("/oss/presigned")
+    Result<String> delete(@Validated @RequestBody OssPresigned argument);
 }
