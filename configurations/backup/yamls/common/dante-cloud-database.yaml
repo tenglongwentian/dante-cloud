@@ -42,7 +42,7 @@ spring:
     hibernate:
       ddl-auto: ${herodotus.switch.database.ddl-auto}
       naming:
-        physical-strategy: org.dromara.dante.hibernate.HerodotusPhysicalNamingStrategy
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       jakarta:
         persistence:
