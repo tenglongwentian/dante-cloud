@@ -1,3 +1,28 @@
+/*
+ * Copyright 2020-2030 码匠君<herodotus@aliyun.com>
+ *
+ * Dante Cloud licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Dante Cloud 采用 APACHE LICENSE 2.0 开源协议，您在使用过程中，需要注意以下几点：
+ *
+ * 1. 请不要删除和修改根目录下的LICENSE文件。
+ * 2. 请不要删除和修改 Dante Cloud 源码头部的版权声明。
+ * 3. 请保留源码和相关描述文件的项目出处，作者声明等。
+ * 4. 分发源码时候，请注明软件出处 <https://gitee.com/dromara/dante-cloud>
+ * 5. 在修改包名，模块名称，项目代码等时，请注明软件出处 <https://gitee.com/dromara/dante-cloud>
+ * 6. 若您的项目无法满足以上几点，可申请商业授权
+ */
+
 -- ----------------------------
 -- Table data for oauth2_application
 -- ----------------------------
@@ -242,10 +267,7 @@ INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_b
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('30ef4653-3c72-4e38-b69b-f5fc8e5aaa73', '2024-08-24 17:26:41.71', '2024-08-24 17:27:56.709', 'system', 0, 'system', NULL, 0, b'1', 0, 'WEB', 'views/pages/security/dictionary/Content.vue', b'1', 'MENU', b'0', b'0', 'mdi-playlist-edit', b'0', 'APP', 'SysDictionaryContent', b'1', 'ed1aafe3-9e56-4d40-8398-e9a1cb6ed2a6', '/security/dictionary/content', NULL, '字典详情');
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('ed1aafe3-9e56-4d40-8398-e9a1cb6ed2a6', '2024-08-24 17:24:29.32', '2024-08-24 17:29:41.274', 'system', 0, 'system', NULL, 7, b'1', 0, 'WEB', 'views/pages/security/dictionary/Index.vue', b'0', 'MENU', b'1', b'1', 'mdi-playlist-check', b'0', 'APP', 'SysDictionary', b'1', 'e6ee0720-adc1-4ccf-99c5-2974b3c5dd22', '/security/dictionary', NULL, '数据字典');
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('df94af5a-4f6f-4bda-a663-dcaaa9731b66', '2023-03-31 14:24:55.765', '2024-09-06 15:59:37.759', NULL, 0, 'system', NULL, 8, b'1', 0, 'WEB', 'views/pages/security/tenant/Index.vue', b'0', 'MENU', b'1', b'1', 'mdi-database-plus', b'0', 'APP', 'SysTenantDataSource', b'1', 'e6ee0720-adc1-4ccf-99c5-2974b3c5dd22', '/security/tenant', NULL, '多租户数据源');
-INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('c8ed388a-77e5-4257-93be-6362a3af2e23', '2023-05-24 17:46:30.212', '2024-12-13 23:45:28.434', 'system', 0, 'system', NULL, 5, b'1', 0, 'WEB', 'views/pages/authorize/audit/Index.vue', b'0', 'MENU', b'0', b'1', 'mdi-source-branch-check', b'0', 'APP', 'OAuth2Audit', b'1', '2f2a5b9a-b7ac-438d-bcb0-f69b75bd009c', '/authorize/audit', NULL, '接口审计');
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('f2ed95c1-7856-40db-9e5b-a7b014ffcb63', '2023-05-28 21:32:26.818', '2025-01-18 22:21:11.994', 'system', 0, 'system', NULL, 8, b'1', 0, 'WEB', 'views/layouts/Index.vue', b'0', 'MENU', b'1', b'0', 'mdi-cloud-upload', b'0', 'APP', NULL, b'1', NULL, '/oss', '/oss/bucket', '对象存储管理');
-INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('48a5355c-02cf-441f-a5bd-400412d14266', '2025-01-18 22:20:29.045', '2025-01-18 22:25:27.04', 'system', 0, 'system', NULL, 8, b'1', 0, 'WEB', 'views/layouts/Index.vue', b'0', 'MENU', b'1', b'0', 'mdi-leaf', b'0', 'APP', NULL, b'1', NULL, '/manage', '/manage/certificate', '系统信息管理');
-INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('232f188b-a4d0-452a-9ffc-d95dc738a457', '2025-01-18 22:23:21.958', '2025-01-18 22:25:34.658', 'system', 0, 'system', NULL, 1, b'1', 0, 'WEB', 'views/pages/manage/certificate/Index.vue', b'0', 'MENU', b'1', b'1', 'mdi-certificate', b'0', 'APP', 'MgtCertificate', b'1', '48a5355c-02cf-441f-a5bd-400412d14266', '/manage/certificate', NULL, '证书管理');
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('c2f9d2a0-04d4-4afa-a54a-f602449e74bd', '2025-11-23 22:10:08.92', '2025-11-23 22:13:32.724', 'system', 0, 'system', NULL, 1, b'1', 0, 'WEB', 'views/layouts/Personal.vue', b'0', 'MENU', b'1', b'0', 'mdi-bell-badge', b'0', 'PERSONAL', NULL, b'1', NULL, '/message', '/message/information', '消息中心');
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('548d3452-fa99-4ad4-8607-13dff96a32ee', '2025-11-23 23:12:54.466', '2025-11-23 23:15:08.196', 'system', 0, 'system', NULL, 2, b'1', 0, 'WEB', 'views/layouts/Personal.vue', b'0', 'MENU', b'1', b'0', 'mdi-account-cog', b'0', 'PERSONAL', NULL, b'1', NULL, '/foundation', '/foundation/account', '基础设置');
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('8d5bbd69-f73b-4288-8577-c7a6a47c2ab6', '2025-11-23 23:16:20.508', '2025-11-24 15:32:47.271', 'system', 0, 'system', NULL, 1, b'1', 0, 'WEB', 'views/personal/message/information/Index.vue', b'0', 'MENU', b'1', b'1', 'mdi-bell', b'0', 'PERSONAL', 'MessageInformation', b'1', 'c2f9d2a0-04d4-4afa-a54a-f602449e74bd', '/message/information', NULL, '我的消息');
@@ -253,9 +275,6 @@ INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_b
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('68584367-af66-4a23-aba2-b656e2c947a6', '2025-11-23 23:03:28.016', '2025-11-24 15:35:25.384', 'system', 0, 'system', NULL, 1, b'1', 0, 'WEB', 'views/personal/foundation/account/Index.vue', b'0', 'MENU', b'0', b'0', 'mdi-card-account-details', b'0', 'PERSONAL', 'FoundationAccount', b'1', '548d3452-fa99-4ad4-8607-13dff96a32ee', '/foundation/account', NULL, '账号管理');
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('8026d76e-8b75-430d-919e-e41cf63fa72f', '2025-11-24 15:36:47.215', '2025-11-24 15:37:03.081', 'system', 0, 'system', NULL, 2, b'1', 0, 'WEB', 'views/personal/foundation/profile/Index.vue', b'0', 'MENU', b'0', b'0', 'mdi-account', b'0', 'PERSONAL', 'FoundationProfile', b'1', '548d3452-fa99-4ad4-8607-13dff96a32ee', '/foundation/profile', NULL, '个人资料');
 INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('9d7356c7-14a8-40fe-ad87-700b8b962a97', '2025-11-24 15:38:01.949', '2025-11-24 15:38:31.523', 'system', 0, 'system', NULL, 2, b'1', 0, 'WEB', 'views/personal/message/setting/Index.vue', b'0', 'MENU', b'0', b'0', 'mdi-bell-cog', b'0', 'PERSONAL', 'MessageSetting', b'1', 'c2f9d2a0-04d4-4afa-a54a-f602449e74bd', '/message/setting', NULL, '通知设置');
-INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('b49f0380-9d00-41f8-9068-df63d906829e', '2025-01-18 22:25:02.748', '2025-11-24 15:39:15.305', 'system', 0, 'system', NULL, 1, b'1', 0, 'WEB', 'views/pages/manage/certificate/Content.vue', b'1', 'MENU', b'0', b'0', 'mdi-file-certificate', b'0', 'APP', 'MgtCertificateContent', b'1', '232f188b-a4d0-452a-9ffc-d95dc738a457', '/manage/certificate/content', NULL, '证书详情');
-INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('ac74be50-6fd7-45f4-be4f-51dbb6c49988', '2026-02-02 11:17:15.333', '2026-02-02 11:17:52.915', 'system', 0, 'system', NULL, 2, b'1', 0, 'WEB', 'views/pages/manage/certificate/File.vue', b'1', 'MENU', b'0', b'0', 'mdi-cloud-arrow-down', b'0', 'APP', 'MgtCertificateFile', b'1', '232f188b-a4d0-452a-9ffc-d95dc738a457', '/manage/certificate/file', NULL, '证书文件管理');
-INSERT INTO `sys_element` (`element_id`, `create_time`, `update_time`, `create_by`, `reversion`, `update_by`, `description`, `ranking`, `is_reserved`, `status`, `application_type`, `component`, `detail_content`, `element_category`, `have_child`, `hide_all_child`, `icon`, `ignore_auth`, `menu_scenario`, `name`, `not_keep_alive`, `parent_id`, `path`, `redirect`, `title`) VALUES ('4c93e613-60e9-45d4-8199-9ac3458718bc', '2026-02-02 11:19:44.075', '2026-02-02 11:19:58.837', 'system', 0, 'system', NULL, 3, b'1', 0, 'WEB', 'views/pages/manage/certificate/Revocation.vue', b'1', 'MENU', b'0', b'0', 'mdi-card-bulleted-off-outline', b'0', 'APP', 'MgtCertificateRevocation', b'1', '232f188b-a4d0-452a-9ffc-d95dc738a457', '/manage/certificate/revocation', NULL, '证书吊销列表');
 
 -- ----------------------------
 -- Table data for sys_element_role
@@ -319,7 +338,6 @@ INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('cb426c81-7019-
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('0cf71777-908e-4e88-b7c6-36b75404396e', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('df94af5a-4f6f-4bda-a663-dcaaa9731b66', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('6b8d0925-66d7-4f5d-b3f4-fb9bb4bac670', '1');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c8ed388a-77e5-4257-93be-6362a3af2e23', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('f2ed95c1-7856-40db-9e5b-a7b014ffcb63', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('7934fb1f-c817-46bb-bd1c-6c849af7f292', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('8ed3e85b-235c-4222-8d28-0c91ea177ac8', '1');
@@ -329,9 +347,6 @@ INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('269d5202-faea-
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('055ceade-50ee-4f26-a816-f99ca408960b', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('ed1aafe3-9e56-4d40-8398-e9a1cb6ed2a6', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('30ef4653-3c72-4e38-b69b-f5fc8e5aaa73', '1');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('48a5355c-02cf-441f-a5bd-400412d14266', '1');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('232f188b-a4d0-452a-9ffc-d95dc738a457', '1');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('b49f0380-9d00-41f8-9068-df63d906829e', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c2f9d2a0-04d4-4afa-a54a-f602449e74bd', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c2f9d2a0-04d4-4afa-a54a-f602449e74bd', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('548d3452-fa99-4ad4-8607-13dff96a32ee', '1');
@@ -346,41 +361,12 @@ INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('8026d76e-8b75-
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('8026d76e-8b75-430d-919e-e41cf63fa72f', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9d7356c7-14a8-40fe-ad87-700b8b962a97', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9d7356c7-14a8-40fe-ad87-700b8b962a97', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('ac74be50-6fd7-45f4-be4f-51dbb6c49988', '1');
-INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('4c93e613-60e9-45d4-8199-9ac3458718bc', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c21db958-7eab-4dbc-8061-966294684219', '7e43d37d-d045-445f-a1de-cb1259f7709c');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c21db958-7eab-4dbc-8061-966294684219', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('c21db958-7eab-4dbc-8061-966294684219', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9f064902-162a-408f-bd3e-866b03c9dae1', '7e43d37d-d045-445f-a1de-cb1259f7709c');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9f064902-162a-408f-bd3e-866b03c9dae1', '1');
 INSERT INTO `sys_element_role` (`element_id`, `role_id`) VALUES ('9f064902-162a-408f-bd3e-866b03c9dae1', 'faccc981-7cd4-4333-9ef9-93752eb186bd');
-
-
-/*
- * Copyright 2020-2030 码匠君<herodotus@aliyun.com>
- *
- * Dante Cloud licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Dante Cloud 采用 APACHE LICENSE 2.0 开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1. 请不要删除和修改根目录下的LICENSE文件。
- * 2. 请不要删除和修改 Dante Cloud 源码头部的版权声明。
- * 3. 请保留源码和相关描述文件的项目出处，作者声明等。
- * 4. 分发源码时候，请注明软件出处 <https://gitee.com/dromara/dante-cloud>
- * 5. 在修改包名，模块名称，项目代码等时，请注明软件出处 <https://gitee.com/dromara/dante-cloud>
- * 6. 若您的项目无法满足以上几点，可申请商业授权
- */
-
 
 -- ----------------------------
 -- Table data for oauth2_authorization_resource
