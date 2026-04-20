@@ -23,37 +23,48 @@
  * 6. 若您的项目无法满足以上几点，可申请商业授权
  */
 
-package org.dromara.dante.bpmn.logic.generator;
+package org.dromara.dante.rpc.client.oss.autoconfigure;
 
-import org.apache.commons.lang3.StringUtils;
-import org.dromara.dante.bpmn.logic.entity.ActIdTenantMember;
-import org.dromara.dante.hibernate.generator.AbstractIdGeneratorType;
-import org.hibernate.engine.spi.SharedSessionContractImplementor;
-import org.hibernate.generator.GeneratorCreationContext;
-
-import java.lang.reflect.Member;
+import org.dromara.dante.autoconfigure.file.FileProperties;
+import org.dromara.dante.core.support.file.FileTemplate;
+import org.dromara.dante.core.support.file.JsonSchemaFileManager;
+import org.dromara.dante.core.support.file.OssTransformer;
 
 /**
- * <p>Description: Camunda 租户成员 UUID 生成器 </p>
+ * <p>Description: JsonSchema对象存储管理器 </p>
  *
  * @author : gengwei.zheng
- * @date : 2021/7/20 13:09
+ * @date : 2025/5/19 15:02
  */
-public class ActIdTenantMemberIdGeneratorType extends AbstractIdGeneratorType {
+public class OssJsonSchemaFileManager implements JsonSchemaFileManager {
 
-    public ActIdTenantMemberIdGeneratorType(ActIdTenantMemberIdGenerator config, Member member, GeneratorCreationContext context) {
-        super(member);
+    private final FileProperties fileProperties;
+    private final FileTemplate fileTemplate;
+    private final OssTransformer ossTransformer;
+
+    public OssJsonSchemaFileManager(FileProperties fileProperties, FileTemplate fileTemplate, OssTransformer ossTransformer) {
+        this.fileProperties = fileProperties;
+        this.fileTemplate = fileTemplate;
+        this.ossTransformer = ossTransformer;
     }
 
     @Override
-    public Object generate(SharedSessionContractImplementor session, Object object) {
+    public OssTransformer getOssTransformer() {
+        return ossTransformer;
+    }
 
-        ActIdTenantMember actIdTenantMember = (ActIdTenantMember) object;
+    @Override
+    public FileTemplate getFileTemplate() {
+        return fileTemplate;
+    }
 
-        if (StringUtils.isEmpty(actIdTenantMember.getId())) {
-            return super.generate(session, object);
-        } else {
-            return actIdTenantMember.getId();
-        }
+    @Override
+    public String getDefaultDirectory() {
+        return fileProperties.getJsonSchema().getDirectory();
+    }
+
+    @Override
+    public String getDefaultBucketName() {
+        return fileProperties.getJsonSchema().getBucketName();
     }
 }

@@ -11,3 +11,10 @@
 `application.properties` 是从 Nacos Docker 官方仓库源代码中取得。
 
 > 之所以采用 Nacos Docker 中的 `application.properties`，是因为其中包含了很多环境变量，便于对照修改。也可以使用 Nacos Github 官方仓库中下载的发布包 `nacos-server-3.2.0.zip` 中的 `application.properties`，但是需要注意别修改错误。
+
+
+## 3. 默认用户
+
+3.2.0 目前无法自动创建用户，可以使用以下脚本自己创建，用户名和密码为 ：nacos / nacos
+
+INSERT INTO users (username, password, enabled) VALUES ('nacos', '$2a$10$EuWPZHzz32dJN7jexM34MOeYirDdFAZm2kuWj7VEOJhhZkDrxfvUu', TRUE);

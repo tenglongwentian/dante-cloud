@@ -23,37 +23,32 @@
  * 6. 若您的项目无法满足以上几点，可申请商业授权
  */
 
-package org.dromara.dante.bpmn.logic.generator;
+package org.dromara.dante.rpc.client.oss.autoconfigure.feign.api;
 
-import org.apache.commons.lang3.StringUtils;
-import org.dromara.dante.bpmn.logic.entity.ActIdTenantMember;
-import org.dromara.dante.hibernate.generator.AbstractIdGeneratorType;
-import org.hibernate.engine.spi.SharedSessionContractImplementor;
-import org.hibernate.generator.GeneratorCreationContext;
-
-import java.lang.reflect.Member;
+import org.dromara.dante.commons.ServiceNameConstants;
+import org.dromara.dante.core.domain.Result;
+import org.dromara.dante.web.definition.dto.OssPresigned;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /**
- * <p>Description: Camunda 租户成员 UUID 生成器 </p>
+ * <p>Description: Openfeign 远程调用 Oss 预签名服务 </p>
  *
  * @author : gengwei.zheng
- * @date : 2021/7/20 13:09
+ * @date : 2024/10/22 22:08
  */
-public class ActIdTenantMemberIdGeneratorType extends AbstractIdGeneratorType {
+@FeignClient(contextId = "remoteOssPresignedUrlService", value = ServiceNameConstants.SERVICE_NAME_OSS)
+public interface RemoteOssPresignedUrlService {
 
-    public ActIdTenantMemberIdGeneratorType(ActIdTenantMemberIdGenerator config, Member member, GeneratorCreationContext context) {
-        super(member);
-    }
+    @PostMapping("/oss/presigned/upload")
+    Result<String> upload(@Validated @RequestBody OssPresigned argument);
 
-    @Override
-    public Object generate(SharedSessionContractImplementor session, Object object) {
+    @PostMapping("/oss/presigned/download")
+    Result<String> download(@Validated @RequestBody OssPresigned argument);
 
-        ActIdTenantMember actIdTenantMember = (ActIdTenantMember) object;
-
-        if (StringUtils.isEmpty(actIdTenantMember.getId())) {
-            return super.generate(session, object);
-        } else {
-            return actIdTenantMember.getId();
-        }
-    }
+    @DeleteMapping("/oss/presigned")
+    Result<String> delete(@Validated @RequestBody OssPresigned argument);
 }

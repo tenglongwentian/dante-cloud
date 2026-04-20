@@ -124,7 +124,7 @@ spring:
       # DDL mode. This is actually a shortcut for the "hibernate.hbm2ddl.auto" property. Default to "create-drop" when using an embedded database, "none" otherwise.spring.jpa.hibernate.ddl-auto=update
       ddl-auto: update
       naming:
-        physical-strategy: org.dromara.dante.data.hibernate.HerodotusPhysicalNamingStrategy
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       jakarta:
         persistence:
@@ -143,7 +143,7 @@ spring:
           use_second_level_cache: true
           use_minimal_puts: true
           region:
-            factory_class: org.dromara.dante.data.hibernate.cache.spi.HerodotusRegionFactory
+            factory_class: org.dromara.dante.hibernate.cache.spi.HerodotusRegionFactory
         jakarta:
           cache:
             missing_cache_strategy: create
@@ -272,19 +272,13 @@ herodotus:
             client-id: 7c1623d76f39097579123e8
             client-secret: 8c343cad9ca732d54242f002
             redirect-uri: http://192.168.101.10:8847/dante-cloud-uaa/oauth/social/gitee
-  oss:
-    dialect: minio
-    proxy:
-      source: http://localhost:3000/api
-      destination: http://127.0.0.1:9000
-    minio:
-      endpoint: http://127.0.0.1:9000
-      access-key: herodotus
-      secret-key: herodotus
-    s3:
-      endpoint: http://127.0.0.1:9000
-      access-key: herodotus
-      secret-key: herodotus
+    oss:
+      endpoint: http://192.168.101.10:9000
+      access-key: 2RO1WHelOwCFxp6Annr7
+      secret-key: h8wpmcmZZZfvMoCat4Vy3Zy1JJSl0fwM8JNsvNxa
+      proxy:
+        source: http://localhost:3000/api
+        destination: http://127.0.0.1:9000
 
 logging:
   file:
@@ -355,7 +349,7 @@ spring:
       # DDL mode. This is actually a shortcut for the "hibernate.hbm2ddl.auto" property. Default to "create-drop" when using an embedded database, "none" otherwise.spring.jpa.hibernate.ddl-auto=update
       ddl-auto: update
       naming:
-        physical-strategy: org.dromara.dante.data.hibernate.HerodotusPhysicalNamingStrategy
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       jakarta:
         persistence:
@@ -374,7 +368,7 @@ spring:
           use_second_level_cache: true
           use_minimal_puts: true
           region:
-            factory_class: org.dromara.dante.data.hibernate.cache.spi.HerodotusRegionFactory
+            factory_class: org.dromara.dante.hibernate.cache.spi.HerodotusRegionFactory
         jakarta:
           cache:
             missing_cache_strategy: create
@@ -498,19 +492,13 @@ herodotus:
             client-id: 7c1623d76f39097579123e8
             client-secret: 8c343cad9ca732d54242f002
             redirect-uri: http://192.168.101.10:8847/dante-cloud-uaa/oauth/social/gitee
-  oss:
-    dialect: minio
-    proxy:
-      source: http://localhost:3000/api
-      destination: http://127.0.0.1:9000
-    minio:
-      endpoint: http://127.0.0.1:9000
-      access-key: herodotus
-      secret-key: herodotus
-    s3:
-      endpoint: http://127.0.0.1:9000
-      access-key: herodotus
-      secret-key: herodotus
+    oss:
+      endpoint: http://192.168.101.10:9000
+      access-key: 2RO1WHelOwCFxp6Annr7
+      secret-key: h8wpmcmZZZfvMoCat4Vy3Zy1JJSl0fwM8JNsvNxa
+      proxy:
+        source: http://localhost:3000/api
+        destination: http://127.0.0.1:9000
 
 logging:
   file:
@@ -584,14 +572,14 @@ spring:
       # DDL mode. This is actually a shortcut for the "hibernate.hbm2ddl.auto" property. Default to "create-drop" when using an embedded database, "none" otherwise.spring.jpa.hibernate.ddl-auto=update
       ddl-auto: update
       naming:
-        physical-strategy: org.dromara.dante.data.hibernate.HerodotusPhysicalNamingStrategy
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       jakarta:
         persistence:
           sharedCache:
             mode: ENABLE_SELECTIVE
       hibernate:
-        dialect: org.dromara.dante.data.hibernate.dialect.OpenGaussDialect
+        dialect: org.dromara.dante.hibernate.dialect.OpenGaussDialect
         format_sql: true
         show_sql: false
         generate_statistics: false
@@ -603,7 +591,7 @@ spring:
           use_second_level_cache: true
           use_minimal_puts: true
           region:
-            factory_class: org.dromara.dante.data.hibernate.cache.spi.HerodotusRegionFactory
+            factory_class: org.dromara.dante.hibernate.cache.spi.HerodotusRegionFactory
         jakarta:
           cache:
             missing_cache_strategy: create
@@ -620,7 +608,7 @@ spring:
             enabled: true
   data:
     redis:
-      database: 6
+      database: 5
       host: 192.168.101.10
       password:
       port: 16379
@@ -730,19 +718,13 @@ herodotus:
             client-id: 7c1623d76f39097579123e8
             client-secret: 8c343cad9ca732d54242f002
             redirect-uri: http://192.168.101.10:8847/dante-cloud-uaa/oauth/social/gitee
-  oss:
-    dialect: minio
-    proxy:
-      source: http://localhost:3000/api
-      destination: http://127.0.0.1:9000
-    minio:
-      endpoint: http://127.0.0.1:9000
-      access-key: herodotus
-      secret-key: herodotus
-    s3:
-      endpoint: http://127.0.0.1:9000
-      access-key: herodotus
-      secret-key: herodotus
+    oss:
+      endpoint: http://192.168.101.10:9000
+      access-key: 2RO1WHelOwCFxp6Annr7
+      secret-key: h8wpmcmZZZfvMoCat4Vy3Zy1JJSl0fwM8JNsvNxa
+      proxy:
+        source: http://localhost:3000/api
+        destination: http://127.0.0.1:9000
 
 logging:
   file:

@@ -36,4 +36,6 @@ public interface ServiceNameConstants {
     String SERVICE_NAME_UAA = "dante-cloud-uaa";
 
     String SERVICE_NAME_UPMS = "dante-cloud-upms";
+
+    String SERVICE_NAME_OSS = "dante-cloud-oss-ability";
 }

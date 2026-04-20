@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.dromara.dante</groupId>
+        <artifactId>dante-cloud-packages</artifactId>
+        <version>4.0.5.2</version>
+    </parent>
+
+    <artifactId>rpc-client-oss-spring-boot-starter</artifactId>
+    <name>${project.artifactId}</name>
+
+    <description>Dante Cloud 服务间通信客户端自动配置 Starter(OSS 作为客户端访问其它服务)</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.dromara.dante</groupId>
+            <artifactId>dante-autoconfigure</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.dromara.dante</groupId>
+            <artifactId>dante-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.dromara.dante</groupId>
+            <artifactId>dante-cloud-commons</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.dromara.dante</groupId>
+            <artifactId>feign-spring-boot-starter</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+</project>

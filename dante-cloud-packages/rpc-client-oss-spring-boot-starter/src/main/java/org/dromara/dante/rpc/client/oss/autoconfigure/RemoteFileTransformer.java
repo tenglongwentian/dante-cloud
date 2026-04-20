@@ -23,37 +23,22 @@
  * 6. 若您的项目无法满足以上几点，可申请商业授权
  */
 
-package org.dromara.dante.bpmn.logic.generator;
+package org.dromara.dante.rpc.client.oss.autoconfigure;
 
-import org.apache.commons.lang3.StringUtils;
-import org.dromara.dante.bpmn.logic.entity.ActIdTenantMember;
-import org.dromara.dante.hibernate.generator.AbstractIdGeneratorType;
-import org.hibernate.engine.spi.SharedSessionContractImplementor;
-import org.hibernate.generator.GeneratorCreationContext;
-
-import java.lang.reflect.Member;
+import org.dromara.dante.core.support.file.AbstractOssPresignedUrlTransformer;
+import org.dromara.dante.core.support.file.OssPresignedUrlGenerator;
+import org.springframework.stereotype.Component;
 
 /**
- * <p>Description: Camunda 租户成员 UUID 生成器 </p>
+ * <p>Description: 服务间文件处理器 </p>
  *
  * @author : gengwei.zheng
- * @date : 2021/7/20 13:09
+ * @date : 2024/10/22 22:35
  */
-public class ActIdTenantMemberIdGeneratorType extends AbstractIdGeneratorType {
+@Component
+public class RemoteFileTransformer extends AbstractOssPresignedUrlTransformer {
 
-    public ActIdTenantMemberIdGeneratorType(ActIdTenantMemberIdGenerator config, Member member, GeneratorCreationContext context) {
-        super(member);
-    }
-
-    @Override
-    public Object generate(SharedSessionContractImplementor session, Object object) {
-
-        ActIdTenantMember actIdTenantMember = (ActIdTenantMember) object;
-
-        if (StringUtils.isEmpty(actIdTenantMember.getId())) {
-            return super.generate(session, object);
-        } else {
-            return actIdTenantMember.getId();
-        }
+    public RemoteFileTransformer(OssPresignedUrlGenerator ossPresignedUrlGenerator) {
+        super(ossPresignedUrlGenerator);
     }
 }

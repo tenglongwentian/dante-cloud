@@ -48,10 +48,7 @@ public class AuthorizationServletAutoConfiguration {
     private static final Logger log = LoggerFactory.getLogger(AuthorizationServletAutoConfiguration.class);
 
     @Bean
-    public SecurityFilterChain securityFilterChain(
-            HttpSecurity httpSecurity,
-            ServletOAuth2AuthorizationConfigurerManager authorizationConfigurerManager
-    ) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity, ServletOAuth2AuthorizationConfigurerManager authorizationConfigurerManager) throws Exception {
 
         log.debug("[Herodotus] |- Bean [Resource Server Security Filter Chain] Configure.");
 
