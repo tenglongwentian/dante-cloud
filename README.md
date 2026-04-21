@@ -12,7 +12,7 @@
     <a href="https://nacos.io/docs/latest/overview/" target="_blank"><img src="https://img.shields.io/badge/Nacos-3.2.0-brightgreen.svg?logo=alibabadotcom" alt="Nacos 3.2.0"></a>
 </p>
 <p align="center">
-    <a href="https://deepwiki.com/dromara/dante-cloud"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
+    <a href="https://deepwiki.com/dromara/dante-cloud" target="_blank"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
     <a href="#" target="_blank"><img src="https://img.shields.io/badge/Version-4.0.5.2-red.svg?logo=spring" alt="Version 4.0.5.2"></a>
     <a href="https://gitee.com/dromara/dante-cloud/issues/IDKCZD" target="_blank"><img src="https://img.shields.io/badge/Dante%20Engine-4.0.5.2-red.svg?logo=spring" alt="Dante Engine 4.0.5.2"></a>
     <a href="https://bell-sw.com/pages/downloads/#downloads" target="_blank"><img src="https://img.shields.io/badge/JDK-25%2B-green.svg?logo=openjdk" alt="Java 25"></a>
